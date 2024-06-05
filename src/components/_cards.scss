@@ -1,0 +1,70 @@
+@use "../utils/mixins" as m;
+@use "../utils/variables" as v;
+
+.container {
+    display: flex;
+    @include m.Flexible($justify: center, );
+    margin-top: 5rem;
+}
+
+.word-container {
+    display: flex;
+    @include m.Flexible($justify: center,$item:center,$direction:column);
+}
+
+.word-1 {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.word-2 {
+    font-size: medium;
+    margin-top: 2rem;
+}
+
+.main-card-container {
+    display: flex;
+    @include m.Flexible($justify: center);
+    gap: 20px;
+    margin-top: 3rem;
+
+
+}
+
+.card-1 {
+    background-color: white;
+    width: 360px;
+    height: 320px;
+    padding: 20px;
+
+}
+
+.img-1 {
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 20px;
+
+}
+
+.h5 {
+    font-size: x-large;
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+.ppp {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.btn1 {
+    padding: 15px;
+    width: 150px;
+    background-color: white;
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
